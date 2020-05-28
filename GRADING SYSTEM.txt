@@ -1,0 +1,262 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package dev1;
+
+/**
+ *
+ * @author Dev Shah
+ */
+import java.util.Scanner;
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       int eng , maths , phy , chem , com , french , ac ;
+       float avg ;
+       Scanner sc=new Scanner(System.in) ;
+       System.out.println("**************WELCOME TO DEVS GRADING SYSTEM**********************");
+       System.out.println("YOUR SUBJECTS ARE: ENGLISH,MATHS,PHYSICS,CHEMISTRY,COMPUTER SCIENCE,FRENCH,ACCOUNTS ")
+       System.out.println("The grading system is as follows:");
+       System.out.println("A* =90-100 marks");
+       System.out.println("A=80-89 marks");
+       System.out.println("B=70-79 marks");
+       System.out.println("C=60-69 marks");
+       System.out.println("D= 50-59 marks");
+       System.out.println("E=40-49 marks");
+       System.out.println("U=0-39 marks");
+      //ENGLISH
+       System.out.println("Enter the marks you received in English(0-100)");//ENGLISH MARKS
+       eng= sc.nextInt();
+       while (eng >100 || eng < 0){
+           System.out.println("Invalid range!Reenter the marks in English(0-100)");
+           eng=sc.nextInt();
+       }
+       System.out.println("You have received "+eng+"  out of 100 marks in English ");
+       if (eng>=90 && eng <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your grade in english is an A*");
+       }
+       if (eng>=80 && eng <=89){
+           System.out.println("EXCELLENT  !Your grade in english is an A");
+       }
+       if (eng>=70 && eng <=79){
+           System.out.println("GOOD! Your grade in english is an B");
+       }
+       if (eng>=60 && eng <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your grade in english is an C");
+       }
+       if (eng>=50 && eng <=59){
+           System.out.println("BAD ! Your grade in english is an D");
+       }   
+       if (eng>=0 && eng<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your grade is an U");
+       }
+       if (eng==100){
+           System.out.println("CONGRATULATIONS YOU ARE A WORLD TOPPER IN ENGLISH!");
+       }
+       
+       //MATHS
+       System.out.println("Enter the marks you received in maths(0-100)");//MATHS MARKS
+       maths= sc.nextInt();
+       while (maths>100 || maths < 0){
+           System.out.println("Invalid range!Reenter the marks in Maths(0-100)");
+           maths=sc.nextInt();
+       }
+       System.out.println("You have received  "+maths+ " out of 100 marks in Maths");
+       if (maths>=90 && maths <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your grade in Maths is an A*");
+       }
+       if (maths>=80 && maths <=89){
+           System.out.println("EXCELLENT  !Your grade in Maths is an A");
+       }
+       if (maths>=70 && maths <=79){
+           System.out.println("GOOD! Your grade in Maths is an B");
+       }
+       if (maths>=60 && maths <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your grade in Maths is an C");
+       }
+       if (maths>=50 && maths <=59){
+           System.out.println("BAD ! Your grade in Maths is an D");
+       }   
+       if (maths>=0 && maths<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your grade in Maths is an U");
+       }
+        if (maths==100){
+           System.out.println("CONGRATULATIONS YOU ARE A WORLD TOPPER IN MATHEMATICS!");
+       }
+       
+       //PHYSICS
+       System.out.println("Enter the marks you received in Physics(0-100)");//PHYSICS MARKS
+       phy= sc.nextInt();
+       while (phy >100 || phy < 0){
+           System.out.println("Invalid range!Reenter the marks in Physics(0-100)");
+           phy=sc.nextInt();
+       }
+       System.out.println("You have received "+phy+" out of 100 marks in Physics");
+       if (phy>=90 && phy <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your grade in Physics is an A*");
+       }
+       if (phy>=80 && phy <=89){
+           System.out.println("EXCELLENT  !Your grade in Physics is an A");
+       }
+       if (phy>=70 &&  phy<=79){
+           System.out.println("GOOD! Your grade in Physics is an B");
+       }
+       if (phy>=60 && phy <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your grade in Physics is an C");
+       }
+       if (phy>=50 && phy <=59){
+           System.out.println("BAD ! Your grade in Physics is an D");
+       }   
+       if (phy>=0 && phy<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your grade in Physics is an U");
+       }
+        if (phy==100){
+           System.out.println("CONGRATULATIONS YOU ARE A WORLD TOPPER IN PHYSICS!");
+       }
+       //CHEMISTRY
+       System.out.println("Enter the marks you have received in Chemisty ");//CHEMISTRY MARKS
+       chem =sc.nextInt();
+       while (chem >100 || chem < 0 ){
+           System.out.println("Invalid Range ! Reenter the marks in Chemistry(0-100)");
+           chem = sc.nextInt();
+       }
+       System.out.println("You have received "+chem+" marks out of 100 marks in Chemistry ");
+       if (chem>=90 && chem <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your grade in chemistry is an A*");
+       }
+       if (chem>=80 && chem <=89){
+           System.out.println("EXCELLENT  !Your grade in chemistry is an A");
+       }
+       if (chem>=70 && chem <=79){
+           System.out.println("GOOD! Your grade in chemistry is an B");
+       }
+       if (chem>=60 && chem <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your grade in chemistry is an C");
+       }
+       if (chem>=50 && chem <=59){
+           System.out.println("BAD ! Your grade in chemistry is an D");
+       }   
+       if (chem>=0 && chem<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your grade in chemistry is an U");
+       }
+        if (chem==100){
+           System.out.println("CONGRATULATIONS YOU ARE A WORLD TOPPER IN CHEMISTRY!");
+       }
+       //COMPUTER SCIENCE
+       System.out.println("Enter the marks you have received in Computer Science(0-100) ");
+       com = sc.nextInt();
+       while (com > 100 || com <0 ){
+           System.out.println("Invalid Range !Reenter the marks in Computer Science (0-100)");
+           com=sc.nextInt();
+       }
+       if (com>=90 && com <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your grade in Computer Science is an A*");
+       }
+       if (com>=80 && com <=89){
+           System.out.println("EXCELLENT  !Your grade in Computer Science is an A");
+       }
+       if (com>=70 && com <=79){
+           System.out.println("GOOD! Your grade in Computer Science is an B");
+       }
+       if (com>=60 && com <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your grade in Computer Science is an C");
+       }
+       if (com>=50 && com <=59){
+           System.out.println("BAD ! Your grade in Computer Science is an D");
+       }   
+       if (com>=0 && com<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your grade in Computer Science is an U");
+       }
+       if (com==100){
+           System.out.println("CONGRATULATIONS YOU ARE A WORLD TOPPER IN COMPUTER SCIENCE!");
+       }
+       //FRENCH
+       System.out.println("You have received"+com+" marks out of 100 marks in Computer Science");
+       System.out.println("Enter the marks you have receieved in French(0-100)");
+       french=sc.nextInt();
+       while (french > 100 || french < 0){
+           System.out.println("Invalid Range! Reenter the marks in French(0-100)");
+           french=sc.nextInt();
+       }
+       if (french>=90 && french <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your grade in French is an A*");
+       }
+       if (french>=80 && french <=89){
+           System.out.println("EXCELLENT  !Your grade in French is an A");
+       }
+       if (french>=70 && french <=79){
+           System.out.println("GOOD! Your grade in French is an B");
+       }
+       if (french>=60 && french <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your grade in French is an C");
+       }
+       if (french>=50 && french <=59){
+           System.out.println("BAD ! Your grade in French is an D");
+       }   
+       if (french>=0 && french<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your grade in French is an U");
+       }
+       if (french==100){
+           System.out.println("CONGRATULATIONS YOU ARE A WORLD TOPPER IN FRENCH!");
+       }
+       System.out.println("You have received "+french+" marks out of 100 marks in French ");
+       //ACCOUNTING
+       System.out.println("Enter the marks you have received in Accounts");
+       ac=sc.nextInt();
+       while (ac >100 || ac <0){
+           System.out.println("Invalid Range ! Reenter the marks in Accounts ");
+           ac=sc.nextInt();
+                   
+       }
+       System.out.println("You have recieved "+ac+" out of 100 marks in Accounts");
+       if (ac>=90 && ac <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your grade in Accounts is an A*");
+       }
+       if (ac>=80 && ac <=89){
+           System.out.println("EXCELLENT  !Your grade in Accounts is an A");
+       }
+       if (ac>=70 && ac <=79){
+           System.out.println("GOOD! Your grade in Accounts is an B");
+       }
+       if (ac>=60 && ac <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your grade in Accounts is an C");
+       }
+       if (ac>=50 && ac <=59){
+           System.out.println("BAD ! Your grade in Accounts is an D");
+       }   
+       if (ac>=0 && ac<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your grade in Accounts is an U");
+       }
+        if (ac==100){
+           System.out.println("CONGRATULATIONS YOU ARE A WORLD TOPPER IN ACCOUNTING!");
+       }
+       //average grade and marks
+       System.out.println("***************************************************");
+       avg =(eng + maths + phy + chem + com + french + ac)/7 );
+       System.out.println("The average of your marks is "+avg+" out of 100 marks" );
+       if (avg>=90 && avg <=100){
+           System.out.println("REMARKABLY EXCELLENT ! Your average grade in english is an A*");
+       }
+       if (avg>=80 && avg <=89){
+           System.out.println("EXCELLENT  !Your average grade in english is an A");
+       }
+       if (avg>=70 && avg <=79){
+           System.out.println("GOOD! Your average grade in english is an B");
+       }
+       if (avg>=60 && avg <=69){
+           System.out.println("OKAYISH PERFORMANCE !Your average grade in english is an C");
+       }
+       if (avg>=50 && avg <=59){
+           System.out.println("BAD ! Your average grade in english is an D");
+       }   
+       if (avg>=0 && avg<=39){
+           System.out.println("HORRIBLY POOR PERFORMANCE! YOU HAVE FAILED!Your average grade is an U");
+       }
+       
+    }
+
